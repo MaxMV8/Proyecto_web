@@ -15,16 +15,16 @@ if (!isset($_SESSION["currentEmail"])) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg" href="../img/pokedex.png" />
+    <link rel="icon" type="image/svg" href="./img/pokedex.png" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/Navbar.css" />
-    <link rel="stylesheet" href="../css/Pokedex.css" />
-    <link rel="stylesheet" href="../css/Modal.css" />
+    <link rel="stylesheet" href="./css/Navbar.css" />
+    <link rel="stylesheet" href="./css/Pokedex.css" />
+    <link rel="stylesheet" href="./css/Modal.css" />
     <title>Pokédex</title>
   </head>
   <body onload="verifyProfile()">
@@ -33,7 +33,7 @@ if (!isset($_SESSION["currentEmail"])) {
         <a class="Navbar__brand" href="javascript:window.location.assign('main.php')">
           <img
             class="Navbar__brand-logo"
-            src="../img/ultraball.svg"
+            src="./img/ultraball.svg"
             alt="Logo"
           />
           <span class="font-weight-light">Poké</span>
@@ -41,7 +41,7 @@ if (!isset($_SESSION["currentEmail"])) {
         </a>
         <div class="header__menu">
           <div class="header__menu--profile">
-            <img src="../img/avatar.svg" alt="User" />
+            <img src="./img/avatar.svg" alt="User" />
             <p>
             <?php 
             echo $name
@@ -91,7 +91,7 @@ if (!isset($_SESSION["currentEmail"])) {
           <?php
             if($_SESSION["currentEmail"] === "admin@stucom.com") {
               echo "<div>
-<a href=\"javascript:window.location.assign('admin.php?file=../img/pokedex.png')\"
+<a href=\"javascript:window.location.assign('admin.php?file=./img/pokedex.png')\"
 class=\"btn btn-info mr-3 font-weight-bold\"
 >Admin</a
 >
@@ -140,7 +140,7 @@ class=\"btn btn-info mr-3 font-weight-bold\"
             <span class=\"display-2\">No Pokemons</span>
             <span class=\"font-weight-bold\">Get back to the homepage to search more Pokémon!</span>
             <div\">
-            <img class=\"mt-4 mb-5\" src=\"../img/broke.svg\" alt=\"\" width=\"400\">
+            <img class=\"mt-4 mb-5\" src=\"./img/broke.svg\" alt=\"\" width=\"400\">
             </div>
             </div>
             </div>"; 
@@ -184,19 +184,19 @@ class=\"btn btn-info mr-3 font-weight-bold\"
       <div class="d-flex justify-content-center mt-4"> 
       <img
             class="rounded"
-            src="../img/sad.gif"
+            src="./img/sad.gif"
             alt="Gif"
             width="300px"
           />
       </div>
       <div class="modal-buttons d-flex flex-row justify-content-center">
         <button onclick="hideDeleteModal()" class="modal-btn primary font-weight-bold" id="hide-modal">Cancel</button>
-        <form action="../php/mysqlDeleteProfile.php" id="delete-form" method="post">
+        <form action="./php/mysqlDeleteProfile.php" id="delete-form" method="post">
         <input type="hidden" id="pokemonIdToDelete" name="pokemonIdToDelete" value="" />
           <button type="submit" class="modal-btn warning font-weight-bold" id="pokemon-add">Sell</button>
         </form>
       </div>
     </div>
-    <script src="../js/profile.js"></script>
+    <script src="./js/profile.js"></script>
   </body>
 </html>

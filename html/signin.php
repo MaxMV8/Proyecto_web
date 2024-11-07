@@ -8,15 +8,15 @@ require(__DIR__.'/../php/mysqlSignIn.php');
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg" href="../img/pokedex.png" />
+    <link rel="icon" type="image/svg" href="./img/pokedex.png" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/Navbar.css" />
-    <link rel="stylesheet" href="../css/Form.css" />
+    <link rel="stylesheet" href="./css/Navbar.css" />
+    <link rel="stylesheet" href="./css/Form.css" />
     <title>Sign In</title>
   </head>
   <body>
@@ -26,7 +26,7 @@ require(__DIR__.'/../php/mysqlSignIn.php');
             <a class="Navbar__brand" href="javascript:window.location.assign('index.html')">
               <img
                 class="Navbar__brand-logo"
-                src="../img/pokeball.svg"
+                src="./img/pokeball.svg"
                 alt="Logo"
               />
               <span class="font-weight-light">Poké</span>
@@ -38,7 +38,7 @@ require(__DIR__.'/../php/mysqlSignIn.php');
         <div class="Form__container">
           <div class="row">
             <div class="col-6">
-              <img class="Form__img" src="../img/signin.png" alt="">
+              <img class="Form__img" src="./img/signin.png" alt="">
             </div>
             <div class="col-6">
               <div class="container-fluid">
@@ -68,6 +68,6 @@ require(__DIR__.'/../php/mysqlSignIn.php');
           </div>
           </div>
         </div>
-        <script src="../js/signin.js"></script>
+        <script src="./js/signin.js"></script>
   </body>
 </html>

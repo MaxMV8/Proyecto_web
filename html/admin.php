@@ -26,14 +26,14 @@ if (isset($_POST['email'])) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg" href="../img/pokedex.png" />
+    <link rel="icon" type="image/svg" href="./img/pokedex.png" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/Navbar.css" />
+    <link rel="stylesheet" href="./css/Navbar.css" />
     <title>Admin</title>
   </head>
   <body>
@@ -42,7 +42,7 @@ if (isset($_POST['email'])) {
         <a class="Navbar__brand" href="javascript:window.location.assign('main.php')">
           <img
             class="Navbar__brand-logo"
-            src="../img/ultraball.svg"
+            src="./img/ultraball.svg"
             alt="Logo"
           />
           <span class="font-weight-light">Poké</span>
@@ -61,7 +61,7 @@ if (isset($_GET['file'])) {
         include($_GET['file']);
     }
 } else {
-    echo '<img class="img-fluid mt-3" src="../img/pokedex.png" alt="Pokedex" />';
+    echo '<img class="img-fluid mt-3" src="./img/pokedex.png" alt="Pokedex" />';
 }
 ?>
       </div>
