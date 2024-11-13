@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Nombre del servidor SonarQube configurado en Jenkins
-        SONARQUBE_SERVER = 'SonarQube_Local'
+        SONARQUBE_SERVER = 'Proyecto_web'
         SONAR_HOST_URL = 'http://localhost:9000'
         SONAR_AUTH_TOKEN = credentials('sonar_token')
         // Agregar sonar-scanner al PATH
