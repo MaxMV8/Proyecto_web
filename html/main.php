@@ -12,16 +12,16 @@ if (!isset($_SESSION["currentEmail"])) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg" href="./img/pokedex.png" />
+    <link rel="icon" type="image/svg" href="../img/pokedex.png" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/Navbar.css" />
-    <link rel="stylesheet" href="./css/Main.css" />
-    <link rel="stylesheet" href="./css/Modal.css" />
+    <link rel="stylesheet" href="../css/Navbar.css" />
+    <link rel="stylesheet" href="../css/Main.css" />
+    <link rel="stylesheet" href="../css/Modal.css" />
     <title>Homepage</title>
   </head>
   <body>
@@ -30,7 +30,7 @@ if (!isset($_SESSION["currentEmail"])) {
         <a class="Navbar__brand" href="javascript:window.location.assign('main.php')">
           <img
             class="Navbar__brand-logo"
-            src="./img/megaball.svg"
+            src="../img/megaball.svg"
             alt="Logo"
           />
           <span class="font-weight-light">Poké</span>
@@ -38,7 +38,7 @@ if (!isset($_SESSION["currentEmail"])) {
         </a>
         <div class="header__menu">
           <div class="header__menu--profile">
-            <img src="./img/avatar.svg" alt="User" />
+            <img src="../img/avatar.svg" alt="User" />
             <p>
               <?php
               echo $name;
@@ -56,19 +56,19 @@ if (!isset($_SESSION["currentEmail"])) {
     <div class="container">
       <div class="Main__hero">
         <div class="Hero__container">
-          <img src="./img/avatar-10.svg" alt="">
+          <img src="../img/avatar-10.svg" alt="">
           <div class="form-group">
             <label class="font-weight-bold justify-self-center" for="filter-pokemon"> Filter Pokémon</label>
             <input type="text" class="form-control" id="filter-pokemon" onkeyup="filterPokemon()"/>
           </div>
-          <img src="./img/avatar-2.svg" alt="">
+          <img src="../img/avatar-2.svg" alt="">
         </div>
         </div>
       </div>
     </div>
     <div class="Cards">
       <div class="row PokeCard__row" id="pokeRow">
-        <img class="gif" src="./img/loader.gif" width="200" height="200" alt="">
+        <img class="gif" src="../img/loader.gif" width="200" height="200" alt="">
       </div>
     </div>
     <div class="overlay" id="overlay">
@@ -92,7 +92,7 @@ if (!isset($_SESSION["currentEmail"])) {
       </div>
       <div class="modal-buttons d-flex flex-row justify-content-center">
         <button class="modal-btn warning font-weight-bold" id="hide-modal">Close</button>
-        <form action="./php/mysqlAddToPokedek.php" method="post" id="main-form">
+        <form action="../php/mysqlAddToPokedek.php" method="post" id="main-form">
         <button type="submit" class="modal-btn primary font-weight-bold" id="pokemon-add">Capture Pokémon</button>
         </form>
       </div>
@@ -103,6 +103,6 @@ if (!isset($_SESSION["currentEmail"])) {
         </div>
       </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
