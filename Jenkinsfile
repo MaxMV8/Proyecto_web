@@ -26,7 +26,7 @@ pipeline {
                         // Ejecutar el análisis con SonarScanner
                         sh '''
                             sonar-scanner \
-                            -Dsonar.projectKey=testPipeline \
+                            -Dsonar.projectKey=Proyecto_web \
                             -Dsonar.sources=. \
                             -Dsonar.host.url=${SONAR_HOST_URL} \
                             -Dsonar.login=${SONAR_AUTH_TOKEN} \
