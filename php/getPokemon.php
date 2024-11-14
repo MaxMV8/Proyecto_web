@@ -1,4 +1,5 @@
 <?php
+
 //conexion a la base de datos
 $link = mysqli_connect("localhost","root","","Pokewebapp");
 
