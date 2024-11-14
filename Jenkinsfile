@@ -7,7 +7,8 @@ pipeline {
         SONAR_HOST_URL = 'http://localhost:9000'
         SONAR_AUTH_TOKEN = credentials('sonar_token')
         // Agregar sonar-scanner al PATH
-        PATH = "/opt/sonar-scanner/bin:$PATH"
+        PATH = "/sonar-scanner-6.2.1.4610-linux-x64/bin:$PATH"
+        
     }
 
     stages {
