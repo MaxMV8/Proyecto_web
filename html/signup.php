@@ -1,4 +1,4 @@
-<?php 
+<?php
 use __DIR__.'/../php/mysqlSignUp.php';
 ?>
 
@@ -30,7 +30,7 @@ use __DIR__.'/../php/mysqlSignUp.php';
               <span class="font-weight-light">Poké</span>
               <span class="font-weight-bold">dex</span>
               </div>
-            </a> 
+            </a>
           </div>
         </div>
         <div class="Form__container">
@@ -61,7 +61,7 @@ use __DIR__.'/../php/mysqlSignUp.php';
                   </form>
                   <button type="button" id="submButton" class="font-weight-bold btn btn-primary">Register</button>
                   <small id="errorMessage" class="ml-3 font-weight-bold text-danger">
-                    <?php 
+                    <?php
                     echo $message;
                     ?>
                   </small>
