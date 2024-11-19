@@ -44,7 +44,6 @@
   /*transition: 300s ease-in;*/
   /*opacity: 0;*/
   /*visibility: hidden;*/
-  display: none;
 }
 .overlay.active {
   /*opacity: 1;*/
