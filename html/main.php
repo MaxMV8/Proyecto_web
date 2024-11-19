@@ -48,8 +48,7 @@ if (!isset($_SESSION["currentEmail"])) {
           <ul>
             <li><a class="font-weight-bold" href="javascript:window.location.assign('profile.php')">Pokédex</a></li>
             <li><a class="font-weight-bold" href="javascript:window.location.assign('social.php')">Social</a></li>
-            <li><botton onclick="logout()" class="font-weight-bold">Logout</botton></li>
-          </ul>
+            <li><button onclick="logout()" class="font-weight-bold" onKeyPress="handleKeyPress()">Logout</button></li>          </ul>
         </div>
       </div>
     </div>
