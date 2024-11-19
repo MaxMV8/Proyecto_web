@@ -96,9 +96,9 @@
   };
 
   function createCookie(name, value, days) {
-    var expires;
+    let expires;
     if (days) {
-      var date = new Date();
+      const date = new Date();
       date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
       expires = "; expires=" + date.toGMTString();
     } else {
@@ -134,12 +134,12 @@
 
 //Filtrando pokémon
 const filterPokemon = () => {
-  $filter = document.querySelector("#filter-pokemon");
-  wantedPokemon = $filter.value.toUpperCase();
-  $pokeRow = document.querySelector("#pokeRow");
-  $pokeCards = $pokeRow.querySelectorAll(".PokeCard");
-  for (i = 0; i < $pokeCards.length; i++) {
-    $pokeCardsContainer = $pokeCards[i].querySelector(".PokeCard__container");
+  const $filter = document.querySelector("#filter-pokemon");
+  let wantedPokemon = $filter.value.toUpperCase();
+  const $pokeRow = document.querySelector("#pokeRow");
+  const $pokeCards = $pokeRow.querySelectorAll(".PokeCard");
+  for ( let i = 0; i < $pokeCards.length; i++) {
+    const $pokeCardsContainer = $pokeCards[i].querySelector(".PokeCard__container");
     name = $pokeCardsContainer.innerText;
     if (name.toUpperCase().indexOf(wantedPokemon) > -1) {
       $pokeCards[i].style.display = "";
@@ -149,8 +149,8 @@ const filterPokemon = () => {
   }
 };
 
-form = document.querySelector("#main-form");
-submit = document.querySelector("#pokemon-add");
+const form = document.querySelector("#main-form");
+const submit = document.querySelector("#pokemon-add");
 form.addEventListener("submit", () => {
   history.pushState({}, "", "");
 });
