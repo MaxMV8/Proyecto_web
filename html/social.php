@@ -21,7 +21,7 @@ $email = $_SESSION["currentEmail"];
 $link = mysqli_connect("localhost", "root", "Pa$$w0rd", "Pokewebapp");
 
 // Revisar si se ha realizado la conexión
-if ($link == false) {
+if ($link) {
     $message = "ERROR: Could not connect " . mysqli_connect_error();
 } else {
     // Obtener el nombre del usuario actual
