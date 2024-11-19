@@ -3,7 +3,7 @@ $name = "";
 
 $link = mysqli_connect("localhost","root","Pa$$w0rd","Pokewebapp");
 
-if ($link == false) {
+if ($link) {
   $message = "ERROR: Could not connect " . mysqli_connect_error();
 } else {
   $email = $_SESSION["currentEmail"];
