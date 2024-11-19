@@ -15,7 +15,7 @@ if (in_array($folder, $allowed_folders) && !empty($file)) {
     if (file_exists($file_path)) {
         // Para archivos PHP, ejecutarlo en lugar de mostrarlo
         if ($folder === 'php') {
-            include($file_path);
+            include $file_path;
         } else {
             // Enviar el archivo con el tipo MIME correcto
             $mime_type = mime_content_type($file_path);
