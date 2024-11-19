@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start(); // Iniciar la sesión
 use __DIR__.'/../php/mysqlMain.php';
 if (!isset($_SESSION["currentEmail"])) {
