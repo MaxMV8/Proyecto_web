@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['user-mail'])) {
     $link = mysqli_connect("localhost", "root", "Pa$$w0rd", "Pokewebapp");
 
     // Revisar si se ha realizado la conexión
-    if ($link == false) {
+    if ($link) {
         $message = "ERROR: Could not connect " . mysqli_connect_error();
     } else {
         // Obtener el nombre y correo del usuario actual
