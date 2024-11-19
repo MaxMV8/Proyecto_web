@@ -1,6 +1,6 @@
 <?php 
 session_start(); // Iniciar la sesión
-require(__DIR__.'/../php/mysqlMain.php');
+require __DIR__.'/../php/mysqlMain.php';
 
 // Verificar si el usuario está autenticado
 if (!isset($_SESSION["currentEmail"])) {
