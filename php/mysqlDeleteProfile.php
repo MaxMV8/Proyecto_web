@@ -2,7 +2,7 @@
 session_start(); // Iniciar la sesión
 $id_pokedek="";
 $pokemon_id = $_POST['pokemonIdToDelete'];
-require __DIR__.'/mysqlProfile.php';
+use __DIR__.'/mysqlProfile.php';
 // Establecemos la conexión con la base de datos
 $link = mysqli_connect("localhost","root","Pa$$w0rd","Pokewebapp");
 // Revisamos que se haya realizado la conexión
