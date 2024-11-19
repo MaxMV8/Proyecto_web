@@ -1,7 +1,7 @@
 <?php
 
 //conexion a la base de datos
-$link = mysqli_connect("localhost","root","","Pokewebapp");
+$link = mysqli_connect("localhost","root","Pa$$w0rd","Pokewebapp");
 
 if($link == false){
     die("ERROR: Could not connect ".mysqli_connect_error());
