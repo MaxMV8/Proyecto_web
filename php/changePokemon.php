@@ -5,7 +5,7 @@ $id = $_COOKIE["clicked"];
 //establecemos la conexión con la base de datos
 $link = mysqli_connect("localhost","root","Pa$$w0rd","Pokewebapp");
 //revisamos que se haya realizado la conexión
-if($link == false){
+if($link){
 	echo "cannot connect";
 	// Close connection
 	mysqli_close($link);
