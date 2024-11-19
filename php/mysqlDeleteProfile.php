@@ -19,7 +19,7 @@ if($link == false){
     $result = mysqli_query($link, $sql);
     if (mysqli_num_rows($result) > 0){
         while ($row = $result->fetch_assoc()){
-            foreach($row as $value) $id_pokedek = $value;
+            foreach($row as $value) { $id_pokedek = $value; }
         }
         // Ya que tengo el id del pokedek, obtendré el id del 
         // Pokémon que quiero eliminar
