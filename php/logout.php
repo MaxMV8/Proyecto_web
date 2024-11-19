@@ -5,7 +5,7 @@ session_destroy(); // Destruir la sesión
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Cerrando sesión...</title>
     <script>
