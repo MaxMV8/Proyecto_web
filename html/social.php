@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start(); // Iniciar la sesión
 use __DIR__.'/../php/mysqlMain.php';
 use __DIR__.'/../php/mysqlSearchUser.php';
@@ -63,7 +63,7 @@ if ($link == false) {
         foreach ($usersToUse as $user) {
             $id_usuario = $user["id"];
             $sql3 = "SELECT COUNT(p.id) AS 'n' FROM Pokemon p
-                    INNER JOIN Pokedek_pokemon pp ON p.id = pp.id_pokemon 
+                    INNER JOIN Pokedek_pokemon pp ON p.id = pp.id_pokemon
                     INNER JOIN Pokedek pk ON pp.id_pokedek = pk.id
                     INNER JOIN Usuario u ON pk.id_usuario = u.id WHERE u.id ='$id_usuario'";
             $result3 = mysqli_query($link, $sql3);
@@ -139,16 +139,16 @@ if ($link == false) {
                 <form action="social.php" method="post" id="search-form">
                     <div class="input-group mt-4 mb-1">
                         <div class="input-group-prepend">
-                            <button class="btn btn-primary" type="submit">Search</button>  
+                            <button class="btn btn-primary" type="submit">Search</button> 
                         </div>
                         <input type="text" class="form-control" placeholder="by email" aria-label="Email" aria-describedby="basic-addon1" id="user-mail" name="user-mail">
                     </div>
                     <small class="font-weight-bold text-danger mb-5">
-                      <?php 
+                      <?php
                       echo htmlspecialchars($message);
                       ?>
                     </small>
-                </form>             
+                </form>       
                 <div class="container">
                     <?php
                     for ($i = 0; $i < count($usersToUse); $i++) {
