@@ -138,10 +138,10 @@ const filterPokemon = () => {
   let wantedPokemon = $filter.value.toUpperCase();
   const $pokeRow = document.querySelector("#pokeRow");
   const $pokeCards = $pokeRow.querySelectorAll(".PokeCard");
-  for ( let i = 0; i < $pokeCards.length; i++) {
+for (const $pokeCard of $pokeCards) {
     const $pokeCardsContainer = $pokeCards[i].querySelector(".PokeCard__container");
     const = $pokeCardsContainer.innerText;
-    if (name.toUpperCase().indexOf(wantedPokemon) > -1) {
+    if (const.toUpperCase().indexOf(wantedPokemon) > -1) {
       $pokeCards[i].style.display = "";
     } else {
       $pokeCards[i].style.display = "none";
