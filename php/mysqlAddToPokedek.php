@@ -28,7 +28,7 @@ if ($link == false) {
 
         if (mysqli_num_rows($result) > 0) {
             while ($row = $result->fetch_assoc()) {
-                foreach ($row as $value) $id_pokedek = $value;
+                foreach ($row as $value) { $id_pokedek = $value; }
             }
 
             // Verificación aleatoria del 33%
