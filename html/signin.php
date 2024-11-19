@@ -1,6 +1,6 @@
 <?php 
 session_start(); // Iniciar la sesión
-require(__DIR__.'/../php/mysqlSignIn.php');
+require __DIR__.'/../php/mysqlSignIn.php';
 ?>
 
 <!DOCTYPE html>
