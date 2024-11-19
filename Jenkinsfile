@@ -29,7 +29,7 @@ pipeline {
                             -Dsonar.projectKey=Proyecto_web \
                             -Dsonar.sources=. \
                             -Dsonar.host.url=${SONAR_HOST_URL} \
-                            -Dsonar.login=${SONAR_AUTH_TOKEN} \
+                            -Dsonar.token=${SONAR_AUTH_TOKEN} \
                             -Dsonar.php.version=8.0
                         '''
                     }
