@@ -6,7 +6,7 @@ use __DIR__.'/mysqlProfile.php';
 // Establecemos la conexión con la base de datos
 $link = mysqli_connect("localhost","root","Pa$$w0rd","Pokewebapp");
 // Revisamos que se haya realizado la conexión
-if($link == false){
+if($link){
     $message = "ERROR: Could not connect ".mysqli_connect_error();
 }else{
     // Obtenemos los datos enviados por el POST
