@@ -37,7 +37,7 @@ $result = mysqli_query($link, $sql);
 if (mysqli_num_rows($result) > 0){
     while ($row = $result->fetch_assoc())
     {
-        foreach($row as $value) $name = $value;
+        foreach($row as $value) { $name = $value; }
     }
 }else{
 	$message = "Credenciales incorrectas";
@@ -50,7 +50,7 @@ $result = mysqli_query($link, $sql);
 if (mysqli_num_rows($result) > 0){
     while ($row = $result->fetch_assoc())
     {
-        foreach($row as $value) $pokeballs = $value;
+        foreach($row as $value) { $pokeballs = $value; }
     }
 }else{
 	$message = "Credenciales incorrectas";
