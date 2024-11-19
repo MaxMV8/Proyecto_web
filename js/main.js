@@ -104,7 +104,7 @@
     } else {
       expires = "";
     }
-    document.cookie = escape(name) + "=" + escape(value) + expires + "; path=/";
+    document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + expires + "; path=/";
   }
 
   $hideModal.addEventListener("click", hideModal);
@@ -140,7 +140,7 @@ const filterPokemon = () => {
   const $pokeCards = $pokeRow.querySelectorAll(".PokeCard");
   for ( let i = 0; i < $pokeCards.length; i++) {
     const $pokeCardsContainer = $pokeCards[i].querySelector(".PokeCard__container");
-    name = $pokeCardsContainer.innerText;
+    const = $pokeCardsContainer.innerText;
     if (name.toUpperCase().indexOf(wantedPokemon) > -1) {
       $pokeCards[i].style.display = "";
     } else {
