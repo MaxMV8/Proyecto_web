@@ -1,5 +1,5 @@
 <?php
-require(__DIR__.'/mysqlProfile.php');
+require __DIR__.'/mysqlProfile.php';
 //obtenemos el indice de la imagen clickeada
 $id = $_COOKIE["clicked"];
 //establecemos la conexión con la base de datos
