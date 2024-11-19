@@ -1,7 +1,7 @@
 <?php 
 session_start(); // Iniciar la sesión
-require __DIR__.'/../php/mysqlMain.php';
-require __DIR__.'/../php/mysqlSearchUser.php';
+use __DIR__.'/../php/mysqlMain.php';
+use __DIR__.'/../php/mysqlSearchUser.php';
 
 if (!isset($_SESSION["currentEmail"])) {
   header("Location: signin.php");
