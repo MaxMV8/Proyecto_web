@@ -141,7 +141,7 @@ if ($link == false) {
                         <div class="input-group-prepend">
                             <button class="btn btn-primary" type="submit">Search</button>  
                         </div>
-                        <input type="text" class="form-control" placeholder="by email" aria-label="" aria-describedby="basic-addon1" id="user-mail" name="user-mail">
+                        <input type="text" class="form-control" placeholder="by email" aria-label="Email" aria-describedby="basic-addon1" id="user-mail" name="user-mail">
                     </div>
                     <small class="font-weight-bold text-danger mb-5">
                       <?php 
