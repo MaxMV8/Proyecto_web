@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start(); // Iniciar sesión
 
 use __DIR__.'/../php/mysqlProfile.php';
@@ -43,7 +43,7 @@ if (!isset($_SESSION["currentEmail"])) {
           <div class="header__menu--profile">
             <img src="../img/avatar.svg" alt="User" />
             <p>
-            <?php 
+            <?php
             echo $name
             ?>
             </p>
@@ -58,7 +58,7 @@ if (!isset($_SESSION["currentEmail"])) {
             Welcome to your Pokédex
           </span>
           <span class="font-weight-bold">
-            <?php 
+            <?php
             echo $name
             ?>!
           </span>
@@ -66,7 +66,7 @@ if (!isset($_SESSION["currentEmail"])) {
             ---  Pokeballs:
           </span>
           <span class="font-weight-bold">
-            <?php 
+            <?php
             echo $pokeballs
             ?>!
           </span>
@@ -143,7 +143,7 @@ class=\"btn btn-info mr-3 font-weight-bold\"
             <img class=\"mt-4 mb-5\" src=\"../img/broke.svg\" alt=\"\" width=\"400\">
             </div>
             </div>
-            </div>"; 
+            </div>";
           }
           ?>
         </div>
@@ -181,7 +181,7 @@ class=\"btn btn-info mr-3 font-weight-bold\"
     <div class="modal" id="delete-modal">
       <h2 class="font-weight-light" >Are you sure you want to sell your Pokémon?</h2>
       <h4 class="font-weight-light" >It will give you a random num of pokeballs</h4>
-      <div class="d-flex justify-content-center mt-4"> 
+      <div class="d-flex justify-content-center mt-4">
       <img
             class="rounded"
             src="../img/sad.gif"
