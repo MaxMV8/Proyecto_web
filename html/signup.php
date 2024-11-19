@@ -1,5 +1,5 @@
 <?php 
-require __DIR__.'/../php/mysqlSignUp.php';
+use __DIR__.'/../php/mysqlSignUp.php';
 ?>
 
 <!DOCTYPE html>
