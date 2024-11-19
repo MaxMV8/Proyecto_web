@@ -1,6 +1,6 @@
 <?php
 $id_pokedek="";
-require __DIR__.'/mysqlProfile.php';
+use __DIR__.'/mysqlProfile.php';
 //establecemos la conexión con la base de datos
 $link = mysqli_connect("localhost","root","Pa$$w0rd","Pokewebapp");
 //revisamos que se haya realizado la conexión
