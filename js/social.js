@@ -21,7 +21,7 @@ function createCookie(name, value, days) {
   } else {
     expires = "";
   }
-  document.cookie = escape(name) + "=" + escape(value) + expires + "; path=/";
+  document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) + expires + "; path=/";
 }
 function dispUser(email){
   createCookie("user_mail",email,"1");
