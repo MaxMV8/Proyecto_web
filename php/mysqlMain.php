@@ -13,7 +13,7 @@ if ($link == false) {
 
   if (mysqli_num_rows($result) > 0) {
     while ($row = $result->fetch_assoc()) {
-      foreach($row as $value) $name = $value;
+      foreach($row as $value) { $name = $value; }
     }
 
     $sql = "SELECT * FROM Usuario WHERE correo != '$email'";
