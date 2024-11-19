@@ -18,7 +18,7 @@ $user_mail = "";
 $email = $_SESSION["currentEmail"];
 
 // Conectar a la base de datos
-$link = mysqli_connect("localhost", "root", "", "Pokewebapp");
+$link = mysqli_connect("localhost", "root", "Pa$$w0rd", "Pokewebapp");
 
 // Revisar si se ha realizado la conexión
 if ($link == false) {
