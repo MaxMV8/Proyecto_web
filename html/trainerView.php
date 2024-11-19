@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start(); // Iniciar la sesión
 use __DIR__.'/../php/mysqlMain.php';
 
@@ -48,12 +48,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['user-mail'])) {
             }
 
             // Obtener los Pokémon del entrenador
-            $sql = "SELECT p.id, p.img_id, p.especie, p.nombre, p.peso, p.altura, p.baxp 
-                    FROM Pokemon p 
-                    INNER JOIN Pokedek_pokemon pp ON p.id = pp.id_pokemon 
-                    INNER JOIN Pokedek pk ON pp.id_pokedek = pk.id 
-                    INNER JOIN Usuario u ON pk.id_usuario = u.id 
-                    WHERE u.correo = '$trainerEmail' 
+            $sql = "SELECT p.id, p.img_id, p.especie, p.nombre, p.peso, p.altura, p.baxp
+                    FROM Pokemon p
+                    INNER JOIN Pokedek_pokemon pp ON p.id = pp.id_pokemon
+                    INNER JOIN Pokedek pk ON pp.id_pokedek = pk.id
+                    INNER JOIN Usuario u ON pk.id_usuario = u.id
+                    WHERE u.correo = '$trainerEmail'
                     ORDER BY p.id DESC";
             $result = mysqli_query($link, $sql);
             if (mysqli_num_rows($result) > 0) {
