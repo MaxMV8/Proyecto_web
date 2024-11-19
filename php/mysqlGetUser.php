@@ -17,7 +17,7 @@ if($link == false){
 	if (mysqli_num_rows($result) > 0){
 		 while ($row = $result->fetch_assoc())
     {
-        foreach($row as $value) $name = $value;
+        foreach($row as $value) { $name = $value; }
     }
 		//Lo primero que necesitamos, será obtener el nombre del usuario
 	//que se ha encontrado
@@ -27,7 +27,7 @@ if($link == false){
 	if (mysqli_num_rows($result) > 0){
             while ($row = $result->fetch_assoc())
     {
-       foreach($row as $value) $nombre = $value;
+       foreach($row as $value) { $nombre = $value; }
     } 
     //Ahora, procederemos a obtener los specs de los pokemons encontrados.
     $sql = "SELECT p.id, p.img_id,p.especie,p.nombre,p.peso,p.altura,p.baxp FROM Pokemon p INNER JOIN Pokedek_pokemon pp ON p.id = pp.id_pokemon INNER JOIN Pokedek pk  ON pp.id_pokedek = pk.id INNER JOIN Usuario u ON pk.id_usuario = u.id WHERE u.correo ='$user_mail' ORDER BY p.id DESC";
