@@ -18,7 +18,7 @@ WHERE u.correo = '$email'";
 	if (mysqli_num_rows($result) > 0){
     while ($row = $result->fetch_assoc())
     {
-      foreach($row as $value) $id_pokedek = $value;
+      foreach($row as $value) { $id_pokedek = $value; }
     }
     //ya que tengo el id del pokedek, obtendre el id del 
     //pokemon que quiero eliminar
@@ -30,7 +30,7 @@ WHERE u.correo = '$email'";
 	if (mysqli_num_rows($result) > 0){
     while ($row = $result->fetch_assoc())
     {
-      foreach($row as $value) $id_pokemon = $value;
+      foreach($row as $value) { $id_pokemon = $value; }
     }
     //ya que tenemos el id del pokedek,y id_pokemon cambiaremos
     //el pokemon seleccionado dentro de dicho pokedek
