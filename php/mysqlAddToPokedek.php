@@ -8,7 +8,7 @@ $message = "";
 $link = mysqli_connect("localhost", "root", "Pa$$w0rd", "Pokewebapp");
 
 // Revisamos que se haya realizado la conexión
-if ($link == false) {
+if ($link) {
     $message = "ERROR: Could not connect " . mysqli_connect_error();
 } else {
     // Obtenemos el id del usuario de la sesión
