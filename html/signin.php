@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start(); // Iniciar la sesión
 use __DIR__.'/../php/mysqlSignIn.php';
 ?>
@@ -32,7 +32,7 @@ use __DIR__.'/../php/mysqlSignIn.php';
               <span class="font-weight-light">Poké</span>
               <span class="font-weight-bold">dex</span>
               </div>
-            </a> 
+            </a>
           </div>
         </div>
         <div class="Form__container">
@@ -59,7 +59,7 @@ use __DIR__.'/../php/mysqlSignIn.php';
                     </div>
                     <button id="submButton" type="button" class="font-weight-bold btn btn-success">Login</button>
                     <small class="ml-3 font-weight-bold text-danger">
-                      <?php 
+                      <?php
                       echo $message;
                       ?>
                     </small>
