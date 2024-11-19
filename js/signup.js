@@ -28,7 +28,7 @@ return /^[^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*@([a-zA-Z0-9-]+\.)+[a-zA
 
 
 const validatePwd = (pwd) => {
-  return /[A-Z]/.test(pwd) && /[0-9]/.test(pwd) && pwd.length >= 6;
+return /[A-Z]/.test(pwd) && /\d/.test(pwd) && pwd.length >= 6;
 };
 
 const signup = () => {
